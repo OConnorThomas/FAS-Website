@@ -1,3 +1,52 @@
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+}
+
+/* Style the navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  padding: 5px 0; /* Adjusted padding for the top and bottom */
+}
+
+/* Navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  width: 20%; /* Set width to distribute links evenly */
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+/* Change the color of the links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Clear floats after the navbar */
+.navbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style the boxes for each navigation item */
+.box {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 14px 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+/* Style the content inside the boxes */
+.box a {
+  text-decoration: none;
+  color: #333;
 }
