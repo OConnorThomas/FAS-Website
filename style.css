@@ -3,7 +3,7 @@
   overflow: hidden;
   background-color: #333;
   width: 100%;
-  padding: 5px 0; /* Adjusted padding for the top and bottom */
+  padding: 4px 0; /* Adjusted padding for the top and bottom */
 }
 
 /* Navigation bar links */
@@ -11,11 +11,11 @@
   float: left;
   display: block;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  width: 20%; /* Set width to distribute links evenly */
-  box-sizing: border-box; /* Include padding in the width */
+  text-align: center; /* center text on hyperlink box */
+  text-decoration: none; /* remove underline hyperlink syntax */
+  width: 50%; /* Set width to half the size of box */
+  margin-left: 25%; /* Offset links by 25% to center them in their box */
+  box-sizing: border-box;
 }
 
 /* Change the color of the links on hover */
@@ -32,38 +32,39 @@
 }
 
 /* Style the boxes for each navigation item */
-.box {
+.navbar-box {
   float: left;
-  width: 20%;
+  width: 19.68%; /* provides enough background space for even borders */
   text-align: center;
-  padding: 14px 0;
+  padding: 10px 0;
+  margin-left: 0.26%; /* retain borders on resize - use relative measurement */
   box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
 /* Style the content inside the boxes */
-.box a {
+.navbar-box a {
   text-decoration: none;
   color: #333;
 }
 
-.container {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.image-container {
+.header-image-container {
   flex: 0 0 auto;
   margin-right: 30px; /* Adjust the margin as needed */
 }
 
-.image-container img {
+.header-image-container img {
   height: 70px;
 }
 
-.text-container {
+.header-text-container {
   flex: auto;
   text-align: center;
-  margin-right: 120px;
+  margin-right: 150px;
 }
