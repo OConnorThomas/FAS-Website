@@ -1,9 +1,45 @@
+.header-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-background {
+  position: fixed;
+  width: 100%;
+  height: 250px;
+  background-color: white;
+}
+
+.header-logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.header-title {
+  position: fixed;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-title a {
+  text-decoration: none;
+  color: #000000;
+}
+
 /* Style the navigation bar */
 .navbar {
   overflow: hidden;
   background-color: #333;
   width: 100%;
   padding: 4px 0; /* Adjusted padding for the top and bottom */
+  margin-top: 80px;
+  position: fixed; /* Set the navbar to fixed position */
 }
 
 /* Navigation bar links */
@@ -34,7 +70,7 @@
 /* Style the boxes for each navigation item */
 .navbar-box {
   float: left;
-  width: 19.68%; /* provides enough background space for even borders */
+  width: 19.58%; /* provides enough background space for even borders */
   text-align: center;
   padding: 10px 0;
   margin-left: 0.27%; /* retain borders on resize - use relative measurement */
@@ -45,26 +81,11 @@
 /* Style the content inside the boxes */
 .navbar-box a {
   text-decoration: none;
-  color: #333;
+  color: #444;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-image-container {
-  flex: 0 0 auto;
-  margin-right: 30px; /* Adjust the margin as needed */
-}
-
-.header-image-container img {
-  height: 70px;
-}
-
-.header-text-container {
-  flex: auto;
-  text-align: center;
-  margin-right: 150px;
+.main {
+  float: left;
+  padding: 20px;
+  margin-top: 100px;
 }
