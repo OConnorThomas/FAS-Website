@@ -37,7 +37,7 @@
   width: 19.68%; /* provides enough background space for even borders */
   text-align: center;
   padding: 10px 0;
-  margin-left: 0.26%; /* retain borders on resize - use relative measurement */
+  margin-left: 0.27%; /* retain borders on resize - use relative measurement */
   box-sizing: border-box;
   background-color: #f2f2f2;
 }
