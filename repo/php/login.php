@@ -2,7 +2,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
-    $password = $_POST["password"];
+    $password = $_POST["pwd"];
 
     try {
 
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($errors) {
             $_SESSION["errors_login"] = $errors;
 
-            header("Location: index.html");
+            header("Location: ../../index.php");
             die();
         }
 
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $_SESSION["last_regeneration"] = time();
 
-        header("Location: home.html");
+        header("Location: ../../index.php?login=sucess");
         $pdo = null;
         $stmt = null;
         exit(); // Ensure that no other code is executed after the redirect
@@ -51,6 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Login failed: " . $e->getMessage());
     }
 } else {
-    header("Location: index.html");
+    header("Location: ../../index.php");
     die();
 }

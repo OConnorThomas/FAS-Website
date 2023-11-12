@@ -1,8 +1,8 @@
 <?php
 
 $host = 'localhost';
-$dbname = 'FAS Database';
-$dbusername = 'root';
+$dbname = 'fas_database';
+$dbusername = 'rootAdmin';
 $dbpassword = '69';
 
 try {

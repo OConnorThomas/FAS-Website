@@ -4,7 +4,7 @@
 <head>
   <!-- Link to external CSS file -->
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" type="text/css" href="new_account.css" />
+  <link rel="stylesheet" type="text/css" href="account.css" />
   <!-- Metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,7 +71,7 @@
         <label for="login-username">Username:</label>
         <input type="text" id="Lusername" name="Lusername" required />
         <label for="login-password">Password:</label>
-        <input type="password" id="Lpassword" name="Lpassword" required />
+        <input type="password" id="Lpassword" name="pwd" required />
         <br />
         <button type="submit">Login</button>
       </form>
