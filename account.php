@@ -22,25 +22,25 @@
   <div class="header-container">
     <div class="header-background"></div>
     <div class="header-logo">
-      <a href="index.html">
+      <a href="index.php">
         <img src="repo/images/FAS.png" alt="FAS Logo" height="70" />
       </a>
     </div>
     <div class="header-title">
-      <a href="index.html">
+      <a href="index.php">
         <h1>Financial Analysis Software</h1>
       </a>
     </div>
-    <a href="account.html" class="account-box"> Account </a>
+    <a href="account.php" class="account-box"> Account </a>
   </div>
 
   <!-- Navigation bar -->
   <div class="navbar">
-    <div class="navbar-box"><a href="index.html">Home</a></div>
-    <div class="navbar-box"><a href="analysis.html">Analysis</a></div>
-    <div class="navbar-box"><a href="finances.html">Finances</a></div>
-    <div class="navbar-box"><a href="algorithms.html">Algorithms</a></div>
-    <div class="navbar-box"><a href="contact.html">About/Contact</a></div>
+    <div class="navbar-box"><a href="index.php">Home</a></div>
+    <div class="navbar-box"><a href="analysis.php">Analysis</a></div>
+    <div class="navbar-box"><a href="finances.php">Finances</a></div>
+    <div class="navbar-box"><a href="algorithms.php">Algorithms</a></div>
+    <div class="navbar-box"><a href="contact.php">About/Contact</a></div>
   </div>
 
   <!-- Page content -->
@@ -48,7 +48,11 @@
   <div class="signup-container">
     <div class="column signup">
       <h2>Sign Up</h2>
-      <form action="signup.php" method="post">
+      <form action="repo/php/signup.php" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="SfirstName" name="SfirstName" required />
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="SlastName" name="SlastName" required />
         <label for="username">Username:</label>
         <input type="text" id="Susername" name="Susername" required />
         <label for="email">Email: </label>
@@ -63,7 +67,7 @@
     <!-- Log in content -->
     <div class="column">
       <h2>Login</h2>
-      <form action="login.php" method="post">
+      <form action="repo/php/login.php" method="post">
         <label for="login-username">Username:</label>
         <input type="text" id="Lusername" name="Lusername" required />
         <label for="login-password">Password:</label>

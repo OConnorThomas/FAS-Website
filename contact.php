@@ -26,27 +26,27 @@
     <div class="header-container">
       <div class="header-background"></div>
       <div class="header-logo">
-        <a href="index.html">
+        <a href="index.php">
           <img src="repo/images/FAS.png" alt="FAS Logo" height="70" />
         </a>
       </div>
       <div class="header-title">
-        <a href="index.html">
+        <a href="index.php">
           <h1>Financial Analysis Software</h1>
         </a>
       </div>
-      <a href="account.html" class="account-box">
+      <a href="account.php" class="account-box">
         Account<br />Sign-up | Login
       </a>
     </div>
 
     <!-- Navigation bar -->
     <div class="navbar">
-      <div class="navbar-box"><a href="index.html">Home</a></div>
-      <div class="navbar-box"><a href="analysis.html">Analysis</a></div>
-      <div class="navbar-box"><a href="finances.html">Finances</a></div>
-      <div class="navbar-box"><a href="algorithms.html">Algorithms</a></div>
-      <div class="navbar-box"><a href="contact.html">About/Contact</a></div>
+      <div class="navbar-box"><a href="index.php">Home</a></div>
+      <div class="navbar-box"><a href="analysis.php">Analysis</a></div>
+      <div class="navbar-box"><a href="finances.php">Finances</a></div>
+      <div class="navbar-box"><a href="algorithms.php">Algorithms</a></div>
+      <div class="navbar-box"><a href="contact.php">About/Contact</a></div>
     </div>
 
     <!-- Page content -->
