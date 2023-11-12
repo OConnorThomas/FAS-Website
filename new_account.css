@@ -1,0 +1,57 @@
+/* Page Content Styling */
+.signup-container {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 25pt;
+  display: flex;
+  border: 2px solid #000000;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.signup {
+  border-right: 2px solid #000000;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  background-color: #466ab6;
+  color: white;
+  border-radius: 4px;
+  border: 3px solid black;
+  font-size: 30pt;
+  margin: 0 5px;
+}
+
+button:hover {
+  background-color: #792929;
+}
+
+/* General Styling */
+h2 {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px; /* Optional: Set a maximum width for the form */
+  margin: auto; /* Optional: Center the form horizontally */
+}
+
+input {
+  margin-bottom: 20px;
+}

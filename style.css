@@ -1,3 +1,4 @@
+/* Header Styling */
 .header-container {
   margin: 0;
   padding: 0;
@@ -32,42 +33,52 @@
   color: #000000;
 }
 
-/* Style the navigation bar */
+.account-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+}
+
+/* Navigation Bar Styling */
 .navbar {
   overflow: hidden;
   background-color: #333;
   width: 100%;
-  padding: 4px 0; /* Adjusted padding for the top and bottom */
+  padding: 4px 0;
   margin-top: 80px;
-  position: fixed; /* Set the navbar to fixed position */
+  position: fixed;
 }
 
-/* Navigation bar links */
 .navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
-  text-align: center; /* center text on hyperlink box */
-  text-decoration: none; /* remove underline hyperlink syntax */
-  width: 50%; /* Set width to half the size of box */
-  margin-left: 25%; /* Offset links by 25% to center them in their box */
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  margin-left: 25%;
   box-sizing: border-box;
 }
 
-/* Change the color of the links on hover */
 .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Clear floats after the navbar */
 .navbar::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* Style the boxes for each navigation item */
 .navbar-box {
   float: left;
   width: 19.58%; /* provides enough background space for even borders */
@@ -78,12 +89,12 @@
   background-color: #f2f2f2;
 }
 
-/* Style the content inside the boxes */
 .navbar-box a {
   text-decoration: none;
   color: #444;
 }
 
+/* Page Content Styling */
 .main {
   margin-top: 150px;
   text-align: center;
@@ -96,13 +107,14 @@ p {
 }
 
 .bounding-box {
-  border: 2px solid #000; /* Set the border properties */
-  border-radius: 10px; /* Set the border radius to create rounded corners */
-  padding: 20px; /* Set the padding to create space between the content and the border */
-  width: 50%; /* Set the width of the bounding box */
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
   margin: 0 auto;
 }
 
+/* Button Styling */
 .button-container {
   display: flex;
   justify-content: center;
