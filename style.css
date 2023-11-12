@@ -85,7 +85,39 @@
 }
 
 .main {
-  float: left;
-  padding: 20px;
-  margin-top: 100px;
+  margin-top: 150px;
+  text-align: center;
+  font-size: 50pt;
+}
+
+p {
+  font-size: 40pt;
+  line-height: 0.2;
+}
+
+.bounding-box {
+  border: 2px solid #000; /* Set the border properties */
+  border-radius: 10px; /* Set the border radius to create rounded corners */
+  padding: 20px; /* Set the padding to create space between the content and the border */
+  width: 50%; /* Set the width of the bounding box */
+  margin: 0 auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #466ab6;
+  color: white;
+  border-radius: 4px;
+  border: 3px solid black;
+  font-size: 30pt;
+  margin: 0 5px;
+}
+
+button:hover {
+  background-color: #792929;
 }
