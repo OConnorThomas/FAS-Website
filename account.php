@@ -31,7 +31,7 @@
         <h1>Financial Analysis Software</h1>
       </a>
     </div>
-    <a href="account.php" class="account-box"> Account </a>
+    <a href="account.php" class="account-box"> Account<br />Sign-up | Login </a>
   </div>
 
   <!-- Navigation bar -->
