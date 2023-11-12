@@ -1,3 +1,8 @@
+<?php
+require_once 'repo/php/config_session.php';
+require_once 'repo/php/signup_view.php';
+require_once 'repo/php/login_view.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,15 +55,15 @@
       <h2>Sign Up</h2>
       <form action="repo/php/signup.php" method="post">
         <label for="firstName">First Name:</label>
-        <input type="text" id="SfirstName" name="SfirstName" required />
+        <input type="text" id="SfirstName" name="firstName" required />
         <label for="lastName">Last Name:</label>
-        <input type="text" id="SlastName" name="SlastName" required />
+        <input type="text" id="SlastName" name="lastName" required />
         <label for="username">Username:</label>
-        <input type="text" id="Susername" name="Susername" required />
+        <input type="text" id="Susername" name="username" required />
         <label for="email">Email: </label>
-        <input type="email" id="Semail" name="Semail" required />
+        <input type="email" id="Semail" name="email" required />
         <label for="password">Password:</label>
-        <input type="password" id="Spassword" name="Spassword" required />
+        <input type="password" id="Spassword" name="pwd" required />
         <label for="re-password">Retype Password:</label>
         <input type="password" id="reSpassword" name="reSpassword" required />
         <button type="submit">Sign Up</button>
@@ -69,7 +74,7 @@
       <h2>Login</h2>
       <form action="repo/php/login.php" method="post">
         <label for="login-username">Username:</label>
-        <input type="text" id="Lusername" name="Lusername" required />
+        <input type="text" id="Lusername" name="username" required />
         <label for="login-password">Password:</label>
         <input type="password" id="Lpassword" name="pwd" required />
         <br />
@@ -77,6 +82,10 @@
       </form>
     </div>
   </div>
+  <?php
+  check_signup_errors();
+  check_login_errors();
+  ?>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $username = $_POST["username"];
@@ -8,28 +8,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["pwd"];
 
     try {
-
         require_once 'dbh.php';
         require_once 'signup_model.php';
         require_once 'signup_control.php';
 
-        $query = "INSERT INTO fasusers (firstName, lastName, username, email, pwd) VALUES
-            (:firstName, :lastName, :username, :email, :pwd);";
+        // Error Handlers:
+        $errors = [];
 
-        $stmt = $pdo->prepare($query);
-        $hashed_pwd = password_hash($password, PASSWORD_DEFAULT);
-        $stmt->bindParam(":firstName", $firstName);
-        $stmt->bindParam(":lastName", $lastName);
-        $stmt->bindParam(":username", $username);
-        $stmt->bindParam(":email", $email);
-        $stmt->bindParam(":pwd", $hashed_pwd);
-        $stmt->execute();
+        if (is_input_empty($firstName, $lastName, $username, $email, $password)) {
+            $errors["empty_input"] = "Fill in all fields!";
+        }
+        if (is_email_invalid($email)) {
+            $errors["invalid_email"] = "Did not provide a valid email!";
+        }
+        if (is_username_taken($pdo, $username)) {
+            $errors["username_taken"] = "Username was taken!";
+        }
+        if (is_email_registered($pdo, $email)) {
+            $errors["email_taken"] = "Email was already registered!";
+        }
+
+        require_once 'config_session.php';
+
+        if ($errors) {
+            $_SESSION["errors_signup"] = $errors;
+
+            $signupData = [
+                "firstName" => $firstName,
+                "lastName" => $lastName,
+                "username" => $username,
+                "email" => $email
+            ];
+            $_SESSION["signup_data"] = $signupData;
+
+            header("Location: ../../index.php");
+            die();
+        }
+
+        create_user($pdo, $firstName, $lastName, $username, $email, $password);
+        header("Location: ../../index.php?signup=sucess");
 
         $pdo = null;
         $stmt = null;
-        header("Location: ../../index.php?signup=sucess");
         exit(); // exit safely
-
     } catch (PDOException $e) {
         die("Login failed: " . $e->getMessage());
     }

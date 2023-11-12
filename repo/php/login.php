@@ -1,6 +1,6 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["username"];
     $password = $_POST["pwd"];
 
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (is_username_wrong($result)) {
             $errors["login_incorrect"] = "Incorrect login info!";
         }
-        if (!is_username_wrong($result) && is_password_wrong($password, $result["password"])) {
+        if (!is_username_wrong($result) && is_password_wrong($password, $result["pwd"])) {
         }
 
         require_once 'config_session.php';
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $_SESSION["last_regeneration"] = time();
 
-        header("Location: ../../index.php?login=sucess");
+        header("Location: ../../analysis.php");
         $pdo = null;
         $stmt = null;
         exit(); // Ensure that no other code is executed after the redirect
