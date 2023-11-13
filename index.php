@@ -48,11 +48,13 @@
   <div class="bounding-box">
     <div class="main">
       <b>Welcome to FAS!</b>
-      <p>Create an account and answer</p>
-      <p>a few short questions so</p>
-      <p>we can start making</p>
-      <p>tailored investment</p>
-      <p>recommendations.</p>
+      <div class="nested-main">
+        <p>Create an account and answer</p>
+        <p>a few short questions so</p>
+        <p>we can start making</p>
+        <p>tailored investment</p>
+        <p>recommendations.</p>
+      </div>
     </div>
     <div class="button-container">
       <a href="account.php">

@@ -68,6 +68,11 @@ require_once 'repo/php/login_view.php';
         <input type="password" id="reSpassword" name="reSpassword" required />
         <button type="submit">Sign Up</button>
       </form>
+      <div class="error">
+        <?php
+        check_signup_errors();
+        ?>
+      </div>
     </div>
     <!-- Log in content -->
     <div class="column">
@@ -77,15 +82,16 @@ require_once 'repo/php/login_view.php';
         <input type="text" id="Lusername" name="username" required />
         <label for="login-password">Password:</label>
         <input type="password" id="Lpassword" name="pwd" required />
-        <br />
+        <br>
         <button type="submit">Login</button>
       </form>
+      <div class="error">
+        <?php
+        check_login_errors();
+        ?>
+      </div>
     </div>
   </div>
-  <?php
-  check_signup_errors();
-  check_login_errors();
-  ?>
 </body>
 
 </html>
