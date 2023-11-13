@@ -102,7 +102,19 @@ require_once 'repo/php/login_view.php';
     <!-- Current Account content -->
     <div class="account-container">
       <div class="column left">
-
+        <div class="profile-pic">
+          <img src="repo/images/Generic-Profile-Image.png" alt="User Profile picture" height="150">
+          <!-- TODO Link to new table to change profile pic -->
+        </div>
+        <div class="profile-header">
+          <h2>
+            <?php echo $_SESSION["user_firstName"] . "'s " ?>
+            Profile:
+          </h2>
+          <h3>
+            <?php echo $accountDescription; ?>
+          </h3>
+        </div>
       </div>
       <!-- Log out content -->
       <div class="column">

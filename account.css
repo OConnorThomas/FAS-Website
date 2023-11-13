@@ -13,7 +13,7 @@
 .column {
   flex: 1;
   padding: 20px;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .left {
@@ -23,6 +23,16 @@
 .button-container {
   display: flex;
   justify-content: center;
+}
+
+/* Profile Content Styling */
+.profile-pic {
+  float: left;
+  margin-top: 30px;
+}
+
+.profile-header {
+  margin-right: 15%;
 }
 
 /* Button Styling */
