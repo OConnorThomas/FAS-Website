@@ -117,25 +117,29 @@ require_once 'repo/php/login_view.php';
             <b> Name: </b>
             <?php echo $_SESSION['user_firstName'] . " " .
               $_SESSION['user_lastName']; ?>
-            <br><br>
+            <br>
             <b> Email: </b>
             <?php echo $_SESSION['user_email']; ?>
-            <br><br>
+            <br>
             <b> Username: </b>
             <?php echo $accountDescription; ?>
-            <br><br>
+            <br>
             <b> Password: </b>
             xxxxxxxxx
           </p>
-          <!-- TODO create php for updating user credentials -->
+        </div>
+        <div class="button-container">
+          <form action="repo/php/logout.php" method="post">
+            <button type="submit">Edit</button>
+          </form>
+          <form action="repo/php/logout.php" method="post">
+            <button type="submit">Logout</button>
+          </form>
         </div>
       </div>
       <!-- Log out content -->
       <div class="column">
-        <h2>Logout</h2>
-        <form action="repo/php/logout.php" method="post">
-          <button type="submit">Logout</button>
-        </form>
+        <h2>Preferences:</h2>
       </div>
     </div>
   <?php } ?>

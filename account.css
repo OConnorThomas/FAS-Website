@@ -31,18 +31,21 @@
 .profile-header {
   margin-right: 15%;
   margin-top: 85px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .profile-content {
+  margin-top: -40px;
   display: inline;
   float: left;
   text-align: left;
+  line-height: 1.75;
 }
 
 /* Button Styling */
 .button-container {
-  display: flex;
+  margin-top: -20px;
+  display: inline-flex;
   justify-content: center;
 }
 
@@ -68,8 +71,8 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  max-width: 400px; /* Optional: Set a maximum width for the form */
-  margin: auto; /* Optional: Center the form horizontally */
+  max-width: 250px; /* width of the input fields */
+  margin: auto;
 }
 
 input {

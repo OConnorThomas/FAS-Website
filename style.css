@@ -137,3 +137,7 @@ button {
 button:hover {
   background-color: #792929;
 }
+
+h2 {
+  line-height: 0.8;
+}
