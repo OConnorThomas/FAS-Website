@@ -57,8 +57,12 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         $sessionId = $newSessionId . "_" . $result["id"];
         session_id($sessionId);
 
+        // For webpage-use
         $_SESSION["user_id"] = $result["id"];
         $_SESSION["user_username"] = htmlspecialchars($result["username"]);
+        $_SESSION["user_firstName"] = htmlspecialchars($result["firstName"]);
+        $_SESSION["user_lastName"] = htmlspecialchars($result["lastName"]);
+        $_SESSION["user_email"] = htmlspecialchars($result["email"]);
 
         $_SESSION["last_regeneration"] = time();
         $_SESSION['_LOGGEDIN'] = true;

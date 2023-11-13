@@ -1,6 +1,6 @@
 /* Page Content Styling */
 .account-container {
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: center;
   font-size: 25pt;
   display: flex;
@@ -13,29 +13,39 @@
 .column {
   flex: 1;
   padding: 20px;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .left {
   border-right: 2px solid #000000;
 }
 
+/* Profile Content Styling */
+.profile-pic {
+  float: left;
+  margin-top: 45px;
+  display: inline;
+  text-align: left;
+}
+
+.profile-header {
+  margin-right: 15%;
+  margin-top: 85px;
+  margin-bottom: 60px;
+}
+
+.profile-content {
+  display: inline;
+  float: left;
+  text-align: left;
+}
+
+/* Button Styling */
 .button-container {
   display: flex;
   justify-content: center;
 }
 
-/* Profile Content Styling */
-.profile-pic {
-  float: left;
-  margin-top: 30px;
-}
-
-.profile-header {
-  margin-right: 15%;
-}
-
-/* Button Styling */
 button {
   padding: 10px 20px;
   background-color: #466ab6;

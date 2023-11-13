@@ -58,7 +58,7 @@ require_once 'repo/php/login_view.php';
   </div>
 
   <!-- Page content -->
-  <!-- Sign up content -->
+  <!-- Intro content where _LOGGEDIN = false -->
   <?php if (!isset($_SESSION['_LOGGEDIN']) || !$_SESSION['_LOGGEDIN']) { ?>
     <div class="account-container">
       <div class="column left">
@@ -99,7 +99,7 @@ require_once 'repo/php/login_view.php';
       </div>
     </div>
   <?php } else { ?>
-    <!-- Current Account content -->
+    <!-- Current Account content where _LOGGEDIN = true -->
     <div class="account-container">
       <div class="column left">
         <div class="profile-pic">
@@ -111,9 +111,23 @@ require_once 'repo/php/login_view.php';
             <?php echo $_SESSION["user_firstName"] . "'s " ?>
             Profile:
           </h2>
-          <h3>
+        </div>
+        <div class="profile-content">
+          <p>
+            <b> Name: </b>
+            <?php echo $_SESSION['user_firstName'] . " " .
+              $_SESSION['user_lastName']; ?>
+            <br><br>
+            <b> Email: </b>
+            <?php echo $_SESSION['user_email']; ?>
+            <br><br>
+            <b> Username: </b>
             <?php echo $accountDescription; ?>
-          </h3>
+            <br><br>
+            <b> Password: </b>
+            xxxxxxxxx
+          </p>
+          <!-- TODO create php for updating user credentials -->
         </div>
       </div>
       <!-- Log out content -->

@@ -54,26 +54,39 @@ require_once 'repo/php/config_session.php';
   </div>
 
   <!-- Page content -->
-  <div class="bounding-box">
-    <div class="main">
-      <b>Welcome to FAS!</b>
-      <div class="nested-main">
-        <p>Create an account and answer</p>
-        <p>a few short questions so</p>
-        <p>we can start making</p>
-        <p>tailored investment</p>
-        <p>recommendations.</p>
+  <!-- Intro content where _LOGGEDIN = false -->
+  <?php if (!isset($_SESSION['_LOGGEDIN']) || !$_SESSION['_LOGGEDIN']) { ?>
+    <div class="bounding-box">
+      <div class="main">
+        <b>Welcome to FAS!</b>
+        <div class="nested-main">
+          <p>Create an account and answer</p>
+          <p>a few short questions so</p>
+          <p>we can start making</p>
+          <p>tailored investment</p>
+          <p>recommendations.</p>
+        </div>
+      </div>
+      <div class="button-container">
+        <a href="account.php">
+          <button type="button">Sign Up</button>
+        </a>
+        <a href="account.php">
+          <button type="button">Login</button>
+        </a>
       </div>
     </div>
-    <div class="button-container">
-      <a href="account.php">
-        <button type="button">Sign Up</button>
-      </a>
-      <a href="account.php">
-        <button type="button">Login</button>
-      </a>
+  <?php } else { ?>
+    <!-- Main Dashboard content where _LOGGEDIN = true -->
+    <div class="bounding-box">
+      <div class="main">
+        <b>Welcome to the Dashboard!</b>
+        <div class="nested-main">
+          <p>You're logged in</p>
+        </div>
+      </div>
     </div>
-  </div>
+  <?php } ?>
 </body>
 
 </html>
