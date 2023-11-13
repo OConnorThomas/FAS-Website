@@ -3,10 +3,6 @@ require_once 'repo/php/config_session.php';
 require_once 'repo/php/signup_view.php';
 require_once 'repo/php/login_view.php';
 
-if ($_SESSION['_LOGGEDIN'])
-  $accountDescription = $_SESSION["user_username"];
-else
-  $accountDescription = "Sign-up | Login";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,11 +39,12 @@ else
     </div>
     <a href="account.php" class="account-box"> Account<br />
       <?php
-      if ($_SESSION['_LOGGEDIN'])
-        $accountDescription = $_SESSION["user_username"];
-      else
+      if (!isset($_SESSION['_LOGGEDIN']) || !$_SESSION['_LOGGEDIN'])
         $accountDescription = "Sign-up | Login";
-      echo $accountDescription; ?>
+      else
+        $accountDescription = $_SESSION["user_username"];
+      echo $accountDescription;
+      ?>
     </a>
   </div>
 
@@ -62,7 +59,7 @@ else
 
   <!-- Page content -->
   <!-- Sign up content -->
-  <?php if (!$_SESSION['_LOGGEDIN']) { ?>
+  <?php if (!isset($_SESSION['_LOGGEDIN']) || !$_SESSION['_LOGGEDIN']) { ?>
     <div class="account-container">
       <div class="column left">
         <h2>Sign Up</h2>

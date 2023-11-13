@@ -12,7 +12,6 @@ session_set_cookie_params([
 ]);
 
 session_start();
-$_SESSION['_LOGGEDIN'];
 
 if (isset($_SESSION["user_id"])) {
   if (!isset($_SESSION["last_regeneration"])) {

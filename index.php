@@ -35,11 +35,12 @@ require_once 'repo/php/config_session.php';
     </div>
     <a href="account.php" class="account-box"> Account<br />
       <?php
-      if ($_SESSION['_LOGGEDIN'])
-        $accountDescription = $_SESSION["user_username"];
-      else
+      if (!isset($_SESSION['_LOGGEDIN']) || !$_SESSION['_LOGGEDIN'])
         $accountDescription = "Sign-up | Login";
-      echo $accountDescription; ?>
+      else
+        $accountDescription = $_SESSION["user_username"];
+      echo $accountDescription;
+      ?>
     </a>
   </div>
 
