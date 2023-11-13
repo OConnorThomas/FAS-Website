@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $_SESSION["last_regeneration"] = time();
         $_SESSION['_LOGGEDIN'] = true;
-        header("Location: ../../dashboard.php");
+        header("Location: ../../index.php?login=success");
         $pdo = null;
         $stmt = null;
         exit(); // Ensure that no other code is executed after the redirect

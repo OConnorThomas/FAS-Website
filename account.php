@@ -62,44 +62,60 @@ else
 
   <!-- Page content -->
   <!-- Sign up content -->
-  <div class="signup-container">
-    <div class="column signup">
-      <h2>Sign Up</h2>
-      <form action="repo/php/signup.php" method="post">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="SfirstName" name="firstName" required />
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="SlastName" name="lastName" required />
-        <label for="username">Username:</label>
-        <input type="text" id="Susername" name="username" required />
-        <label for="email">Email: </label>
-        <input type="email" id="Semail" name="email" required />
-        <label for="password">Password:</label>
-        <input type="password" id="Spassword" name="pwd" required />
-        <label for="re-password">Retype Password:</label>
-        <input type="password" id="reSpassword" name="rePassword" required />
-        <button type="submit">Sign Up</button>
-      </form>
-      <?php
-      check_signup_errors();
-      ?>
+  <?php if (!$_SESSION['_LOGGEDIN']) { ?>
+    <div class="account-container">
+      <div class="column left">
+        <h2>Sign Up</h2>
+        <form action="repo/php/signup.php" method="post">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="SfirstName" name="firstName" required />
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="SlastName" name="lastName" required />
+          <label for="username">Username:</label>
+          <input type="text" id="Susername" name="username" required />
+          <label for="email">Email: </label>
+          <input type="email" id="Semail" name="email" required />
+          <label for="password">Password:</label>
+          <input type="password" id="Spassword" name="pwd" required />
+          <label for="re-password">Retype Password:</label>
+          <input type="password" id="reSpassword" name="rePassword" required />
+          <button type="submit">Sign Up</button>
+        </form>
+        <?php
+        check_signup_errors();
+        ?>
+      </div>
+      <!-- Log in content -->
+      <div class="column">
+        <h2>Login</h2>
+        <form action="repo/php/login.php" method="post">
+          <label for="login-username">Username:</label>
+          <input type="text" id="Lusername" name="username" required />
+          <label for="login-password">Password:</label>
+          <input type="password" id="Lpassword" name="pwd" required />
+          <br>
+          <button type="submit">Login</button>
+        </form>
+        <?php
+        check_login_errors();
+        ?>
+      </div>
     </div>
-    <!-- Log in content -->
-    <div class="column">
-      <h2>Login</h2>
-      <form action="repo/php/login.php" method="post">
-        <label for="login-username">Username:</label>
-        <input type="text" id="Lusername" name="username" required />
-        <label for="login-password">Password:</label>
-        <input type="password" id="Lpassword" name="pwd" required />
-        <br>
-        <button type="submit">Login</button>
-      </form>
-      <?php
-      check_login_errors();
-      ?>
+  <?php } else { ?>
+    <!-- Current Account content -->
+    <div class="account-container">
+      <div class="column left">
+
+      </div>
+      <!-- Log out content -->
+      <div class="column">
+        <h2>Logout</h2>
+        <form action="repo/php/logout.php" method="post">
+          <button type="submit">Logout</button>
+        </form>
+      </div>
     </div>
-  </div>
+  <?php } ?>
 </body>
 
 </html>
