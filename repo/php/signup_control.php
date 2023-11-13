@@ -14,12 +14,12 @@ function is_email_invalid(string $email): bool
 
 function is_username_taken(object $pdo, string $username): bool
 {
-    return (get_username($pdo, $username));
+    return (is_array(get_username($pdo, $username)));
 }
 
 function is_email_registered(object $pdo, string $email): bool
 {
-    return (get_email($pdo, $email));
+    return (is_array(get_email($pdo, $email)));
 }
 
 function create_user(object $pdo, string $firstName, string $lastName, string $username, string $email, string $password)
