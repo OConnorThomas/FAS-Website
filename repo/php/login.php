@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         if ($errors) {
             $_SESSION["errors_login"] = $errors;
-
-            header("Location: ../../account.php");
+            $_SESSION['_LOGGEDIN'] = false;
+            header("Location: ../../account.php?login=failed");
             die();
         }
 
@@ -42,8 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION["user_username"] = htmlspecialchars($result["username"]);
 
         $_SESSION["last_regeneration"] = time();
-
-        header("Location: ../../analysis.php");
+        $_SESSION['_LOGGEDIN'] = true;
+        header("Location: ../../dashboard.php");
         $pdo = null;
         $stmt = null;
         exit(); // Ensure that no other code is executed after the redirect

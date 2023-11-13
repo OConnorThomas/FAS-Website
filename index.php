@@ -1,3 +1,6 @@
+<?php
+require_once 'repo/php/config_session.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,8 +33,13 @@
         <h1>Financial Analysis Software</h1>
       </a>
     </div>
-    <a href="account.php" class="account-box">
-      Account<br />Sign-up | Login
+    <a href="account.php" class="account-box"> Account<br />
+      <?php
+      if ($_SESSION['_LOGGEDIN'])
+        $accountDescription = $_SESSION["user_username"];
+      else
+        $accountDescription = "Sign-up | Login";
+      echo $accountDescription; ?>
     </a>
   </div>
 

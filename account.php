@@ -2,6 +2,11 @@
 require_once 'repo/php/config_session.php';
 require_once 'repo/php/signup_view.php';
 require_once 'repo/php/login_view.php';
+
+if ($_SESSION['_LOGGEDIN'])
+  $accountDescription = $_SESSION["user_username"];
+else
+  $accountDescription = "Sign-up | Login";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +41,14 @@ require_once 'repo/php/login_view.php';
         <h1>Financial Analysis Software</h1>
       </a>
     </div>
-    <a href="account.php" class="account-box"> Account<br />Sign-up | Login </a>
+    <a href="account.php" class="account-box"> Account<br />
+      <?php
+      if ($_SESSION['_LOGGEDIN'])
+        $accountDescription = $_SESSION["user_username"];
+      else
+        $accountDescription = "Sign-up | Login";
+      echo $accountDescription; ?>
+    </a>
   </div>
 
   <!-- Navigation bar -->

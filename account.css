@@ -48,7 +48,7 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  max-width: 300px; /* Optional: Set a maximum width for the form */
+  max-width: 400px; /* Optional: Set a maximum width for the form */
   margin: auto; /* Optional: Center the form horizontally */
 }
 

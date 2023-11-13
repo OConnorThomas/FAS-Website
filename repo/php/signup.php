@@ -45,12 +45,12 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
             ];
             $_SESSION["signup_data"] = $signupData;
 
-            header("Location: ../../account.php");
+            header("Location: ../../account.php?signup=failed");
             die();
         }
 
         create_user($pdo, $firstName, $lastName, $username, $email, $password);
-        header("Location: ../../index.php?signup=sucess");
+        header("Location: ../../dashboard.php");
 
         $pdo = null;
         $stmt = null;
