@@ -7,6 +7,7 @@ require_once 'repo/php/config_session.php';
 <head>
   <!-- Link to external CSS file -->
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="contact.css" />
   <!-- Metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -55,14 +56,47 @@ require_once 'repo/php/config_session.php';
 
   <!-- Page content -->
   <div class="main">
-    <h2>Documents</h2>
-    <div style="margin-left: 20px">
-      <h3>
-        <a href="README.md">Reference README</a>
-      </h3>
-      <h3>
-        <a href="https://github.com/Tocslayer/FAS-Website">GitHub Repo</a>
-      </h3>
+    <!-- Row One content -->
+    <div class="contact-container">
+      <div class="column rightB">
+        <h3>Bio 1:</h3>
+        <img src="repo/images/Generic-Profile-Image.png" alt="User Profile picture" height="150">
+      </div>
+      <div class="column rightB">
+        <h3>Bio 2:</h3>
+        <img src="repo/images/Generic-Profile-Image.png" alt="User Profile picture" height="150">
+      </div>
+      <div class="column">
+        <h3>Bio 3:</h3>
+        <img src="repo/images/Generic-Profile-Image.png" alt="User Profile picture" height="150">
+      </div>
+    </div>
+  </div>
+  <!-- Row Two content -->
+  <div class="contact-container">
+    <div class="column rightB">
+      <h3>References:</h3>
+      <ul>
+        <li><a href="README.md">Reference README</a></li>
+        <li>Honors Project 2024: UMass Lowell</li>
+        <li>&copy; 2023 FAS. All rights reserved.</li>
+      </ul>
+    </div>
+    <div class="column rightB">
+      <h3>Contact:</h3>
+      <ul>
+        <li>Phone: 978-320-5349</li>
+        <li>Email: <a href="mailto:oconnordthomas@gmail.com">oconnordthomas@gmail.com</a></li>
+        <li>Linkedin: <a href="https://www.linkedin.com/in/thomas-o-connor-56285b262/">TOConnor</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h3>Source Code:</h3>
+      <p>
+        <a href="https://github.com/Tocslayer/FAS-Website">FAS GitHub Repo</a>
+        <br><br>
+        Version 1.0.0 | Built with HTML, CSS, PHP
+      </p>
     </div>
   </div>
 </body>

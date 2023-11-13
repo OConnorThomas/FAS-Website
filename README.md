@@ -15,7 +15,7 @@ Thomas D O'Connor
 
 ## Version History
 
-- 0.0.1 : Dev
+- 1.0.0 : Dev
 
 ## Acknowledgments
 

@@ -96,7 +96,10 @@
 
 /* Page Content Styling */
 .main {
-  margin-top: 150px;
+  margin-top: 140px;
+}
+
+.large-centered-font {
   text-align: center;
   font-size: 50pt;
 }

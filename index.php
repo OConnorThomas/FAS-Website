@@ -57,7 +57,7 @@ require_once 'repo/php/config_session.php';
   <!-- Intro content where _LOGGEDIN = false -->
   <?php if (!isset($_SESSION['_LOGGEDIN']) || !$_SESSION['_LOGGEDIN']) { ?>
     <div class="bounding-box">
-      <div class="main">
+      <div class="main large-centered-font">
         <b>Welcome to FAS!</b>
         <div class="nested-main">
           <p>Create an account and answer</p>
@@ -79,7 +79,7 @@ require_once 'repo/php/config_session.php';
   <?php } else { ?>
     <!-- Main Dashboard content where _LOGGEDIN = true -->
     <div class="bounding-box">
-      <div class="main">
+      <div class="main large-centered-font">
         <b>Welcome to the Dashboard!</b>
         <div class="nested-main">
           <p>You're logged in</p>
