@@ -59,16 +59,29 @@ require_once 'repo/php/config_session.php';
     <!-- Row One content -->
     <div class="contact-container">
       <div class="column rightB">
-        <h3>Bio 1:</h3>
-        <img src="repo/images/Generic-Profile-Image.png" alt="User Profile picture" height="150">
+        <h3>EunJu Lee</h3>
+        <img src="repo/images/EunJu-Headshot.png" alt="User Profile picture" height="150">
+        <p class="bio-text">
+          Associate Professor at UMass Lowell
+          <br>PhD in Finance
+          <br>Phone: <a href="tel:(978) 934-2520">(978) 934-2520</a></li>
+          <br>Email: <a href="mailto:eunju_lee@uml.edu">EunJu_Lee@uml.edu</a></li>
+        </p>
       </div>
       <div class="column rightB">
-        <h3>Bio 2:</h3>
-        <img src="repo/images/Generic-Profile-Image.png" alt="User Profile picture" height="150">
+        <h3>Thomas O'Connor</h3>
+        <img src="repo/images/Thomas-Headshot.png" alt="User Profile picture" height="150">
+
       </div>
       <div class="column">
-        <h3>Bio 3:</h3>
-        <img src="repo/images/Generic-Profile-Image.png" alt="User Profile picture" height="150">
+        <h3>Paul Downen</h3>
+        <img src="repo/images/Paul-Headshot.png" alt="User Profile picture" height="150">
+        <p class="bio-text">
+          Associate Professor at UMass Lowell
+          <br>PhD in Computer Science
+          <br>Phone: <a href="tel:978-934-3674">(978) 934-3674</a></li>
+          <br>Email: <a href="mailto:Paul_Downen@uml.edu">Paul_Downen@uml.edu</a></li>
+        </p>
       </div>
     </div>
   </div>
@@ -85,7 +98,7 @@ require_once 'repo/php/config_session.php';
     <div class="column rightB">
       <h3>Contact:</h3>
       <ul>
-        <li>Phone: 978-320-5349</li>
+        <li>Phone: <a href="tel:(978)-320-5349">(978) 320-5349</a></li>
         <li>Email: <a href="mailto:oconnordthomas@gmail.com">oconnordthomas@gmail.com</a></li>
         <li>Linkedin: <a href="https://www.linkedin.com/in/thomas-o-connor-56285b262/">TOConnor</a></li>
       </ul>
