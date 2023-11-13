@@ -6,6 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $username = $_POST["username"];
     $email = $_POST["email"];
     $password = $_POST["pwd"];
+    $rePassword = $_POST["rePassword"];
 
     try {
         require_once 'dbh.php';
@@ -26,6 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         }
         if (is_email_registered($pdo, $email)) {
             $errors["email_taken"] = "Email was already registered!";
+        }
+        if (!do_passwords_match($password, $rePassword)) {
+            $errors['password_mismatch'] = "Passwords do not match!";
         }
 
         require_once 'config_session.php';

@@ -17,7 +17,7 @@ function is_username_taken(object $pdo, string $username): bool
     return (get_username($pdo, $username));
 }
 
-function is_email_registered(object $pdo, string $email)
+function is_email_registered(object $pdo, string $email): bool
 {
     return (get_email($pdo, $email));
 }
@@ -25,4 +25,9 @@ function is_email_registered(object $pdo, string $email)
 function create_user(object $pdo, string $firstName, string $lastName, string $username, string $email, string $password)
 {
     set_user($pdo, $firstName, $lastName, $username, $email, $password);
+}
+
+function do_passwords_match(string $password, string $rePassword): bool
+{
+    return ($password === $rePassword);
 }

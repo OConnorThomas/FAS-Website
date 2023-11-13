@@ -65,14 +65,12 @@ require_once 'repo/php/login_view.php';
         <label for="password">Password:</label>
         <input type="password" id="Spassword" name="pwd" required />
         <label for="re-password">Retype Password:</label>
-        <input type="password" id="reSpassword" name="reSpassword" required />
+        <input type="password" id="reSpassword" name="rePassword" required />
         <button type="submit">Sign Up</button>
       </form>
-      <div class="error">
-        <?php
-        check_signup_errors();
-        ?>
-      </div>
+      <?php
+      check_signup_errors();
+      ?>
     </div>
     <!-- Log in content -->
     <div class="column">
@@ -85,11 +83,9 @@ require_once 'repo/php/login_view.php';
         <br>
         <button type="submit">Login</button>
       </form>
-      <div class="error">
-        <?php
-        check_login_errors();
-        ?>
-      </div>
+      <?php
+      check_login_errors();
+      ?>
     </div>
   </div>
 </body>
