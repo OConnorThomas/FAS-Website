@@ -6,7 +6,7 @@ require_once 'repo/php/config_session.php';
 
 <head>
   <!-- Link to external CSS file -->
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
   <!-- Metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />

@@ -9,7 +9,7 @@ require_once 'repo/php/login_view.php';
 
 <head>
   <!-- Link to external CSS file -->
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
   <link rel="stylesheet" type="text/css" href="account.css" />
   <!-- Metadata -->
   <meta charset="UTF-8" />

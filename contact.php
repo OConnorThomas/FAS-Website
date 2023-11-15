@@ -59,7 +59,7 @@ require_once 'repo/php/config_session.php';
     <!-- Row One content -->
     <div class="contact-container">
       <div class="column rightB">
-        <h3>EunJu Lee</h3>
+        <h3>Faculty Advisor: EunJu Lee</h3>
         <img src="repo/images/EunJu-Headshot.png" alt="User Profile picture" height="150">
         <p class="bio-text">
           Associate Professor at UMass Lowell
@@ -69,12 +69,17 @@ require_once 'repo/php/config_session.php';
         </p>
       </div>
       <div class="column rightB">
-        <h3>Thomas O'Connor</h3>
+        <h3>Author: Thomas O'Connor</h3>
         <img src="repo/images/Thomas-Headshot.png" alt="User Profile picture" height="150">
-
+        <p class="bio-text">
+          Undergrad at UMass Lowell
+          <br>Phone: <a href="tel:(978)-320-5349">(978) 320-5349</a>
+          <br>Email: <a href="mailto:oconnordthomas@gmail.com">oconnordthomas@gmail.com</a>
+          <br>Linkedin: <a href="https://www.linkedin.com/in/thomas-o-connor-56285b262/">TOConnor</a>
+        </p>
       </div>
       <div class="column">
-        <h3>Paul Downen</h3>
+        <h3>Committee Member: Paul Downen</h3>
         <img src="repo/images/Paul-Headshot.png" alt="User Profile picture" height="150">
         <p class="bio-text">
           Associate Professor at UMass Lowell
@@ -90,25 +95,22 @@ require_once 'repo/php/config_session.php';
     <div class="column rightB">
       <h3>References:</h3>
       <ul>
-        <li><a href="README.md">Reference README</a></li>
         <li>Honors Project 2024: UMass Lowell</li>
-        <li>&copy; 2023 FAS. All rights reserved.</li>
+        <li><a href="README.md">Reference README</a></li>
       </ul>
     </div>
     <div class="column rightB">
-      <h3>Contact:</h3>
-      <ul>
-        <li>Phone: <a href="tel:(978)-320-5349">(978) 320-5349</a></li>
-        <li>Email: <a href="mailto:oconnordthomas@gmail.com">oconnordthomas@gmail.com</a></li>
-        <li>Linkedin: <a href="https://www.linkedin.com/in/thomas-o-connor-56285b262/">TOConnor</a></li>
-      </ul>
+      <h3>Version:</h3>
+      <p>
+        Version 1.0.0 | Built with HTML, CSS, PHP
+        <br><br>
+        &copy; 2023 FAS. All rights reserved.
+      </p>
     </div>
     <div class="column">
       <h3>Source Code:</h3>
       <p>
         <a href="https://github.com/Tocslayer/FAS-Website">FAS GitHub Repo</a>
-        <br><br>
-        Version 1.0.0 | Built with HTML, CSS, PHP
       </p>
     </div>
   </div>
