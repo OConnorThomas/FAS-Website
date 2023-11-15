@@ -7,6 +7,9 @@ require_once 'repo/php/config_session.php';
 <head>
   <!-- Link to external CSS file -->
   <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" type="text/css" href="finances.css" />
+  <!-- Link to external JS file -->
+  <script src="repo/js/finances.js"></script>
   <!-- Metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,6 +94,18 @@ require_once 'repo/php/config_session.php';
     <div class="bounding-box side">
       <div class="main centered">
         <h3>Current Portfolio:</h3>
+        <div class="pie-chart"></div>
+        <br>
+        <div class="label">
+          &nbspInvestments:
+        </div>
+        <br>
+        <div class="investments">
+          JNJ : $15,000
+          <br>GE : $30,000
+          <br>AMZN : $10,000
+          <br>WMT : $45,000
+        </div>
       </div>
     </div>
     <div class="bounding-box middle">
@@ -98,12 +113,15 @@ require_once 'repo/php/config_session.php';
         <b>Welcome to the Dashboard!</b>
         <div class="medium-font">
           <p>You're logged in</p>
+          <p>I'm literally so proud 💅</p>
+          <br>
+          <p>Tracked stocks go here</p>
         </div>
       </div>
     </div>
     <div class="bounding-box side">
       <div class="main centered">
-        <h3>Recent Investments:</h3>
+        <h3>Suggested Investments:</h3>
       </div>
     </div>
   <?php } ?>

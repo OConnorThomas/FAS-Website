@@ -5,9 +5,11 @@ require_once 'repo/php/config_session.php';
 <html lang="en">
 
 <head>
-  <!-- Link to external CSS file -->
+  <!-- Link to external CSS files -->
   <link rel="stylesheet" type="text/css" href="index.css" />
   <link rel="stylesheet" type="text/css" href="algorithms.css" />
+  <!-- Link to external JS file -->
+  <script src="repo/js/algorithms.js"></script>
   <!-- Metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />

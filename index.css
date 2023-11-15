@@ -117,7 +117,7 @@
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   margin: 0 auto;
 }
 
@@ -128,8 +128,21 @@
 }
 
 .side {
-  width: 22%;
+  width: 23.2%; /* Hack to maximize side panel size */
   margin-right: -90px; /* Hack to prevent premature resizing */
+  padding: 15px;
+}
+
+.pie-chart {
+  width: 95%;
+  padding-bottom: 95%;
+  background: conic-gradient(
+    #3498db 0% 15%,
+    #2ecc71 15% 45%,
+    #e74c3c 45% 55%,
+    #f39c12 55% 100%
+  );
+  border-radius: 50%;
 }
 
 /* Button Styling */
@@ -161,4 +174,8 @@ h3 {
   line-height: 0.2;
   font-weight: bold;
   text-decoration: underline;
+}
+
+body {
+  word-wrap: break-word; /* Hack to move words downwards on resize */
 }

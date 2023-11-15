@@ -5,9 +5,11 @@ require_once 'repo/php/config_session.php';
 <html lang="en">
 
 <head>
-  <!-- Link to external CSS file -->
+  <!-- Link to external CSS files -->
   <link rel="stylesheet" type="text/css" href="index.css" />
   <link rel="stylesheet" type="text/css" href="analysis.css" />
+  <!-- Link to external JS file -->
+  <script src="repo/js/analysis.js"></script>
   <!-- Metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -59,7 +61,7 @@ require_once 'repo/php/config_session.php';
   <?php if (!isset($_SESSION['_LOGGEDIN']) || !$_SESSION['_LOGGEDIN']) { ?>
     <div class="bounding-box side">
       <div class="main centered">
-        <h3>Selections:</h3>
+        <h3>Select Metrics:</h3>
       </div>
     </div>
     <div class="bounding-box middle">
@@ -69,24 +71,32 @@ require_once 'repo/php/config_session.php';
     </div>
     <div class="bounding-box side">
       <div class="main centered">
-        <h3>Recent Investments:</h3>
+        <h3>Example Investments:</h3>
       </div>
     </div>
   <?php } else { ?>
     <!-- Analysis content where _LOGGEDIN = true -->
     <div class="bounding-box side">
       <div class="main centered">
-        <h3>Selections:</h3>
+        <h3>Select Metrics:</h3>
       </div>
     </div>
     <div class="bounding-box middle">
       <div class="main large-font centered">
         <b>Analysis Content</b>
+        <div class="medium-font">
+          <p>Modify values : Tweak analysis</p>
+          <p>Select historical recommendations</p>
+          <p>to inspect, modify, and interact</p>
+          <p>with personal finances!</p>
+          <br>
+          <p>Metrics appear below 🤯</p>
+        </div>
       </div>
     </div>
     <div class="bounding-box side">
       <div class="main centered">
-        <h3>Recent Investments:</h3>
+        <h3>Suggested Investments:</h3>
       </div>
     </div>
   <?php } ?>
