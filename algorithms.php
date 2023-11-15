@@ -7,6 +7,7 @@ require_once 'repo/php/config_session.php';
 <head>
   <!-- Link to external CSS file -->
   <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" type="text/css" href="algorithms.css" />
   <!-- Metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,7 +55,41 @@ require_once 'repo/php/config_session.php';
   </div>
 
   <!-- Page content -->
-
+  <!-- Intro content where _LOGGEDIN = false -->
+  <?php if (!isset($_SESSION['_LOGGEDIN']) || !$_SESSION['_LOGGEDIN']) { ?>
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>EMPTY</h3>
+      </div>
+    </div>
+    <div class="bounding-box middle">
+      <div class="main large-font centered">
+        <b>Intro Algorithms</b>
+      </div>
+    </div>
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>EMPTY</h3>
+      </div>
+    </div>
+  <?php } else { ?>
+    <!-- Algorithms content where _LOGGEDIN = true -->
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>Change This</h3>
+      </div>
+    </div>
+    <div class="bounding-box middle">
+      <div class="main large-font centered">
+        <b>Algorithms Content</b>
+      </div>
+    </div>
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>In Post</h3>
+      </div>
+    </div>
+  <?php } ?>
 </body>
 
 </html>

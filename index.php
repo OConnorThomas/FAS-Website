@@ -56,10 +56,15 @@ require_once 'repo/php/config_session.php';
   <!-- Page content -->
   <!-- Intro content where _LOGGEDIN = false -->
   <?php if (!isset($_SESSION['_LOGGEDIN']) || !$_SESSION['_LOGGEDIN']) { ?>
-    <div class="bounding-box">
-      <div class="main large-centered-font">
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>Features:</h3>
+      </div>
+    </div>
+    <div class="bounding-box middle">
+      <div class="main large-font centered">
         <b>Welcome to FAS!</b>
-        <div class="nested-main">
+        <div class="medium-font">
           <p>Create an account and answer</p>
           <p>a few short questions so</p>
           <p>we can start making</p>
@@ -76,14 +81,29 @@ require_once 'repo/php/config_session.php';
         </a>
       </div>
     </div>
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>Examples:</h3>
+      </div>
+    </div>
   <?php } else { ?>
     <!-- Main Dashboard content where _LOGGEDIN = true -->
-    <div class="bounding-box">
-      <div class="main large-centered-font">
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>Current Portfolio:</h3>
+      </div>
+    </div>
+    <div class="bounding-box middle">
+      <div class="main large-font centered">
         <b>Welcome to the Dashboard!</b>
-        <div class="nested-main">
+        <div class="medium-font">
           <p>You're logged in</p>
         </div>
+      </div>
+    </div>
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>Recent Investments:</h3>
       </div>
     </div>
   <?php } ?>

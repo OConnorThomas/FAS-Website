@@ -11,7 +11,7 @@ PHP backend that handles login, signup, logout, and edit of accounts
 SQL database used to store account data. Fetched by PHP backend.
 Javascript scripts to do things #WIP#
 
-### Website contents
+### Website Contents
 
 1. Intro/Dashboard/Home page
    Dynamic page that displays signup-login prompt along with features and examples

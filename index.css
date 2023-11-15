@@ -99,23 +99,37 @@
   margin-top: 140px;
 }
 
-.large-centered-font {
-  text-align: center;
+.large-font {
   font-size: 50pt;
 }
 
-.nested-main {
+.centered {
+  text-align: center;
+}
+
+.medium-font {
   font-size: 40pt;
   line-height: 0.2;
 }
 
 .bounding-box {
+  float: left;
   background-color: #fff;
   border: 2px solid #000;
   border-radius: 10px;
   padding: 20px;
-  width: 50%;
   margin: 0 auto;
+}
+
+.middle {
+  width: 45%;
+  margin-left: 105px; /* Hack to prevent premature resizing */
+  margin-right: 15px;
+}
+
+.side {
+  width: 22%;
+  margin-right: -90px; /* Hack to prevent premature resizing */
 }
 
 /* Button Styling */
@@ -140,4 +154,11 @@ button:hover {
 
 h2 {
   line-height: 0.8;
+}
+
+h3 {
+  font-size: 25pt;
+  line-height: 0.2;
+  font-weight: bold;
+  text-decoration: underline;
 }

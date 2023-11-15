@@ -94,22 +94,22 @@ require_once 'repo/php/config_session.php';
   <div class="contact-container">
     <div class="column rightB">
       <h3>References:</h3>
-      <ul>
+      <ul class="bio-text">
         <li>Honors Project 2024: UMass Lowell</li>
         <li><a href="README.md">Reference README</a></li>
       </ul>
     </div>
     <div class="column rightB">
       <h3>Version:</h3>
-      <p>
-        Version 1.0.0 | Built with HTML, CSS, PHP
+      <p class="bio-text">
+        Version 1.0.0 | HTML, CSS, PHP, Javascript, SQL
         <br><br>
         &copy; 2023 FAS. All rights reserved.
       </p>
     </div>
     <div class="column">
       <h3>Source Code:</h3>
-      <p>
+      <p class="bio-text">
         <a href="https://github.com/Tocslayer/FAS-Website">FAS GitHub Repo</a>
       </p>
     </div>
