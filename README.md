@@ -21,7 +21,7 @@ Javascript scripts to do things #WIP#
    Once logged in: displays account info along with edit features and preference options
    Features: dark mode, notifications
 3. Analysis page
-   Dynamic page that displays examples of algorithm useage
+   Dynamic page that displays examples of algorithm usage
    Once logged in: displays interactive top-level analysis algorithm
    Features: multi-stock comparison, variable risk tolerance
 4. Finances page
