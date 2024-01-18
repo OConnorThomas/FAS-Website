@@ -110,12 +110,11 @@ require_once 'repo/php/config_session.php';
     </div>
     <div class="bounding-box middle">
       <div class="main large-font centered">
-        <b>Welcome to the Dashboard!</b>
+        <b>Welcome Dashboard</b>
         <div class="medium-font">
-          <p>You're logged in</p>
-          <p>I'm literally so proud 💅</p>
-          <br>
-          <p>Tracked stocks go here</p>
+          <p>Portfolio's performance:</p>
+          <img src="repo/images/Stock Chart Placeholder.png" alt="Stock Chart Example" />
+          <p>Tracked stocks go underneath</p>
         </div>
       </div>
     </div>

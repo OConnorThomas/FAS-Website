@@ -62,23 +62,31 @@ require_once 'repo/php/config_session.php';
     <div class="bounding-box side">
       <div class="main centered">
         <h3>Select Metrics:</h3>
-      </div>
-    </div>
-    <div class="bounding-box middle">
-      <div class="main large-font centered">
-        <b>Intro Analysis</b>
-      </div>
-    </div>
-    <div class="bounding-box side">
-      <div class="main centered">
-        <h3>Example Investments:</h3>
-      </div>
-    </div>
-  <?php } else { ?>
-    <!-- Analysis content where _LOGGEDIN = true -->
-    <div class="bounding-box side">
-      <div class="main centered">
-        <h3>Select Metrics:</h3>
+        <h2>Risk Tolerance</h2>
+        <div class="slider-container">
+          <input type="range" min="1" max="4" value="2" class="slider" id="myRange" />
+        </div>
+        <p>
+          Conservative &nbsp;&nbsp;&nbsp; Balanced
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Growth
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Agressive
+        </p>
+        <h2>Principal Investment</h2>
+        <input type="number" name="PrincipalInvestment" min="0" max="999999999" step="1" />
+        <h2>Stock Search</h2>
+        <div class="button-container">
+          <a href="">
+            <button type="button">DJI</button>
+          </a>
+          <a href="">
+            <button type="button">S&P500</button>
+          </a>
+        </div>
+        <input type="text" id="stock_input" name="stock_input" />
+        <h2>Generate Analysis</h2>
+        <a href="">
+          <button type="button">Generate!</button>
+        </a>
       </div>
     </div>
     <div class="bounding-box middle">
@@ -86,11 +94,61 @@ require_once 'repo/php/config_session.php';
         <b>Analysis Content</b>
         <div class="medium-font">
           <p>Modify values : Tweak analysis</p>
-          <p>Select historical recommendations</p>
+          <p>Select historical recommends</p>
           <p>to inspect, modify, and interact</p>
           <p>with personal finances!</p>
-          <br>
-          <p>Metrics appear below 🤯</p>
+          <br />
+          <p>Metrics appear below</p>
+        </div>
+      </div>
+    </div>
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>Suggested Investments:</h3>
+      </div>
+    </div>
+  <?php } else { ?>
+    <!-- Analysis content where _LOGGEDIN = true -->
+    <div class="bounding-box side">
+      <div class="main centered">
+        <h3>Select Metrics:</h3>
+        <h2>Risk Tolerance</h2>
+        <div class="slider-container">
+          <input type="range" min="1" max="4" value="2" class="slider" id="myRange" />
+        </div>
+        <p>
+          Conservative &nbsp;&nbsp;&nbsp; Balanced
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Growth
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Agressive
+        </p>
+        <h2>Principal Investment</h2>
+        <input type="number" name="PrincipalInvestment" min="0" max="999999999" step="1" />
+        <h2>Stock Search</h2>
+        <div class="button-container">
+          <a href="">
+            <button type="button">DJI</button>
+          </a>
+          <a href="">
+            <button type="button">S&P500</button>
+          </a>
+        </div>
+        <input type="text" id="stock_input" name="stock_input" />
+        <h2>Generate Analysis</h2>
+        <a href="">
+          <button type="button">Generate!</button>
+        </a>
+      </div>
+    </div>
+    <div class="bounding-box middle">
+      <div class="main large-font centered">
+        <b>Analysis Content</b>
+        <div class="medium-font">
+          <p>Modify values : Tweak analysis</p>
+          <p>Select historical recommends</p>
+          <p>to inspect, modify, and interact</p>
+          <p>with personal finances!</p>
+          <br />
+          <p>Metrics appear below</p>
         </div>
       </div>
     </div>
