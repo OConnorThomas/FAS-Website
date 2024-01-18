@@ -121,6 +121,20 @@ require_once 'repo/php/config_session.php';
     <div class="bounding-box side">
       <div class="main centered">
         <h3>Suggested Investments:</h3>
+        <div class="label">&nbsp;Current Suggestions:</div>
+        <br />
+        <div class="investments">
+          JNJ : $15,000 @ $200/share
+          <br />GE : $30,000 @ $100/share <br />AMZN : $10,000 @ $28/share
+        </div>
+        <br />
+        <div class="label">&nbsp;Previous Suggestions:</div>
+        <br />
+        <div class="investments">
+          WMT : $45,000 @ $50/share
+          <br />NVDA @ $500/share <br />RCL @ $45/share <br />TSLA @
+          $14,000/share
+        </div>
       </div>
     </div>
   <?php } ?>
